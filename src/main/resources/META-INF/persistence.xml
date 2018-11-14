@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SNAFromSpanishTextPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>database.DAOSentence</class>
+    <class>database.DAOCorpus</class>
+    <class>database.Cluster</class>
+    <class>database.DAOEdgelist</class>
+    <class>database.DAODocument</class>
+    <class>database.DAOEntity</class>
+    <class>database.DAOAlias</class>
+    <class>database.DAOCluster</class>
+    <class>database.Entitynormalized</class>
+    <class>database.Entityraw</class>
+    <class>database.DAOEntitynormalized</class>
+    <class>database.DAOEntityraw</class>
+    <class>database.DAOEntityNormalized</class>
+    <class>database.DAOEdgeList</class>
+    <class>database.DAOEntityRaw</class>
+    <class>database.Jaccarddistance</class>
+    <class>database.DAOJaccarddistance</class>
+    <class>database.DAOJaccardDistance</class>
+    <class>database.DAOOctoparseimport</class>
+    <class>database.Document</class>
+    <class>database.Corpus</class>
+    <class>database.Edgelist</class>
+    <class>database.Octoparseimport</class>
+    <class>database.Sentence</class>
+    <class>database.DAOOctoparseImport</class>
+    <class>database.DAOEntityrawcluster</class>
+    <class>database.DAOSentenceentitynormalized</class>
+    <class>database.DAOParagraph</class>
+    <shared-cache-mode>NONE</shared-cache-mode>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.56.1:3306/snadb?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="snauser"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="sysco01"/>
+    </properties>
+  </persistence-unit>
+</persistence>
