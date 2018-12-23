@@ -14,9 +14,8 @@ Today the relevance of applying Social Network Analysis to understand complex ph
 
 ## How does this SW work?
 
-First of all this is not an automatic tool that is going to ingest unstructured text to generate a network (graph data structure). This is a tool that requires several manual steps to create a network based on co-occurrence. With this in mind, this are the main modules on this application.
+If you want to test this software, follow these steps.
 
- 1. Getting unstructured data and cleaning it, I have tested this applications just by copying some articles from newspapers written in Spanish.
- 2. 
+UNDER CONSTRUCTION :)
 
 Written with [StackEdit](https://stackedit.io/).
