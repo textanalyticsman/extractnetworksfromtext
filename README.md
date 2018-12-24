@@ -1,4 +1,6 @@
-#  SW to extract networks based on co-occurrence from unstructured text
+
+
+#  A software to extract networks based on co-occurrence from unstructured text
 
 This is just a desktop application I have done to extract networks from unstructured text written in Spanish. However, as I am using [FreeLing](http://nlp.lsi.upc.edu/freeling/) to implement language analysis capabilities, this tool could also be used to extract networks from unstructured text written on other languages supported by [FreeLing](http://nlp.lsi.upc.edu/freeling/).
 
@@ -12,9 +14,26 @@ Today the relevance of applying Social Network Analysis to understand complex ph
  2. The second sub problem this work faces is normalizing entities, which means recognizing different entities i.e. John, John Doe and Doe as the same. This problem is solved through the usage of a clustering algorithm called Density-based spatial clustering of applications with noise (DBSCAN) and this is implemented using the library [SMILE](https://haifengl.github.io/smile/) 
  3. The third sub problem, generating relationships between entities, is solved using co-occurrence at the sentence level or at the paragraph level to minimize errors because generating links through co-occurrence at the document level could be too broad.
 
-## How does this SW work?
+## How could I run this SW?
 
 If you want to test this software, follow these steps.
+
+ 1. First of all, these are the components needed to run this.
+
+	 - [ ] Ubuntu 16.04.5 LTS, the OS where FreeLing is installed
+	 - [ ] FreeLing 4.0, the engine used to solve problems such as NER and NEC
+	 - [ ] MySQL, the database where data is persisted
+	 - [ ] MySQL Workbeanch, software used to design the database
+	 - [ ] MySQL connector, library used to connect this SW with MySQL
+	 - [ ] Java Development Kit 1.8, our beloved programming language
+	 - [ ] Netbeans 8.2, IDE used to develop this software
+	 - [ ] Statistical Machine Intelligence and Learning Engine (Smile), this library is used to implement the DBSCAN algorithm
+	 - [ ] EclipeLink (JPA), the persistence layer used through Java
+	 - [ ] Gephi, the tool used to visualize the network gathered using the SW developed here
+	 - [ ] ORA-Lite, the tool used to analyse the network applying Social Network Analysis
+ 2. Install FreeLing using this guide 
+
+  
 
 UNDER CONSTRUCTION :)
 
