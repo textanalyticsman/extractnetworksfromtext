@@ -1,3 +1,5 @@
+
+
 #  A software to extract networks based on co-occurrence from unstructured text
 
 This is just a desktop application I have done to extract networks from unstructured text written in Spanish. However, as I am using [FreeLing](http://nlp.lsi.upc.edu/freeling/) to implement language analysis capabilities, this tool could also be used to extract networks from unstructured text written on other languages supported by [FreeLing](http://nlp.lsi.upc.edu/freeling/).
@@ -23,16 +25,14 @@ If you want to test this software, follow these steps.
 	 - [ ] MySQL, the database where data is persisted
 	 - [ ] MySQL Workbeanch, software used to design the database
 	 - [ ] MySQL connector, library used to connect this SW with MySQL
-	 - [ ] Java Development Kit 1.8, our beloved programming language
+	 - [ ] Java Development Kit 1.8, our programming language
 	 - [ ] Netbeans 8.2, IDE used to develop this software
 	 - [ ] Statistical Machine Intelligence and Learning Engine (Smile), this library is used to implement the DBSCAN algorithm
 	 - [ ] EclipeLink (JPA), the persistence layer used through Java
 	 - [ ] Gephi, the tool used to visualize the network gathered using the SW developed here
 	 - [ ] ORA-Lite, the tool used to analyse the network applying Social Network Analysis
- 2. Install FreeLing using this guide 
-
-  
-
-UNDER CONSTRUCTION :)
-
-Written with [StackEdit](https://stackedit.io/).
+ 2. Install FreeLing on Ubuntu using this [guide](https://talp-upc.gitbook.io/freeling-4-0-user-manual/installation#install-from-tar-gz-source-packages). I have used the section called " Install from .tar.gz source packages"
+ 3. Install MySQL Community Server using this [link](https://dev.mysql.com/downloads/mysql/). I developed this SW with MySQL Server 5.7. Using the latest version is up to you. Once, you have MySQL installed, you can run the script located on [database](https://github.com/textanalyticsman/databasesna)  to create the database used by this software
+ 4. Install MySQL Workbench using this [link](https://dev.mysql.com/downloads/workbench/) if you want to redesing the database
+ 5. Install JDK 1.8 and NetBeans 8.2 on Ubuntu; the internet is plenty of guides to do this. Once you have NetBeans on your machine you can clone or download the source code from [extractNetworksFromText](https://github.com/textanalyticsman/extractnetworksfromtext)
+ 6. To install Gephi and ORA-Lite you can use these links [Gephi](https://gephi.org/users/download/) [ORA-Lite](http://www.casos.cs.cmu.edu/projects/ora/download.php ). Importantly, I have used both of them on Windows.
