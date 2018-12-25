@@ -21,6 +21,7 @@ If you want to test this software, follow these steps.
  1. First of all, these are the components needed to run this.
 
 	 - [ ] Ubuntu 16.04.5 LTS, the OS where FreeLing is installed
+	 - [ ] SWIG, used to connect Java with FreeLing as this is an engine writen in C++
 	 - [ ] FreeLing 4.0, the engine used to solve problems such as NER and NEC
 	 - [ ] MySQL, the database where data is persisted
 	 - [ ] MySQL Workbeanch, software used to design the database
@@ -31,8 +32,35 @@ If you want to test this software, follow these steps.
 	 - [ ] EclipeLink (JPA), the persistence layer used through Java
 	 - [ ] Gephi, the tool used to visualize the network gathered using the SW developed here
 	 - [ ] ORA-Lite, the tool used to analyse the network applying Social Network Analysis
- 2. Install FreeLing on Ubuntu using this [guide](https://talp-upc.gitbook.io/freeling-4-0-user-manual/installation#install-from-tar-gz-source-packages). I have used the section called " Install from .tar.gz source packages"
- 3. Install MySQL Community Server using this [link](https://dev.mysql.com/downloads/mysql/). I developed this SW with MySQL Server 5.7. Using the latest version is up to you. Once, you have MySQL installed, you can run the script located on [database](https://github.com/textanalyticsman/databasesna)  to create the database used by this software
- 4. Install MySQL Workbench using this [link](https://dev.mysql.com/downloads/workbench/) if you want to redesing the database
- 5. Install JDK 1.8 and NetBeans 8.2 on Ubuntu; the internet is plenty of guides to do this. Once you have NetBeans on your machine you can clone or download the source code from [extractNetworksFromText](https://github.com/textanalyticsman/extractnetworksfromtext)
- 6. To install Gephi and ORA-Lite you can use these links [Gephi](https://gephi.org/users/download/) [ORA-Lite](http://www.casos.cs.cmu.edu/projects/ora/download.php ). Importantly, I have used both of them on Windows.
+ 2. Install SWIG in case you are missing it.
+ 3. Install JDK 1.8
+ 4. Install FreeLing on Ubuntu using this [guide](https://talp-upc.gitbook.io/freeling-4-0-user-manual/installation#install-from-tar-gz-source-packages). I have used the section called " Install from .tar.gz source packages"
+ 5. Generate the FreeLing APIs for Java. For example, I have installed FreeLing on this path /home/osboxes/FreeLing-4.0 where you will find the folder APIs. To generate the Java API, follow these steps.
+
+	 - [ ] Edit /FreeLing-4.0/APIs/java/Makefile* to adjust the right values of
+	          FREELINGDIR = /usr/local
+	          SWIGDIR = /usr/share/swig2.0
+	          JAVADIR = /usr/lib/jvm/java-8-openjdk-amd64
+	          
+		Previous values are just an example according to my installation
+	 - [ ] Run 'make' to build the java API.
+          
+ 6. To call FreeLing from a Java program
+
+	 - [ ] Make sure that the directory contanining libfreeling.so
+        ($FREELINGDIR/lib) is in your LD_LIBRARY_PATH      
+	 - [ ] Make sure that the directory contanining libfreeling_javaAPI.so (created
+        by 'make' above) is in your LD_LIBRARY_PATH.       
+	 - [ ] Make sure that the package "freeling.jar" created by make is in your 	CLASSPATH
+
+	As this SW is a Maven project I have included the "freeling.jar" as a dependency. What is more the LD_LIBRARY_PATH on NetBeans has been configured with these values -Djava.library.path=/usr/local/lib:/home/osboxes/FreeLing-4.0/APIs/java
+ 7. Install MySQL Community Server using this [link](https://dev.mysql.com/downloads/mysql/). I developed this SW with MySQL Server 5.7. Using the latest version is up to you. Once, you have MySQL installed, you can run the script located on [database](https://github.com/textanalyticsman/databasesna)  to create the database used by this software
+ 8. Install MySQL Workbench using this [link](https://dev.mysql.com/downloads/workbench/) if you want to redesing the database
+ 9.  Install NetBeans 8.2 on Ubuntu; the internet is plenty of guides to do this. Once you have NetBeans on your machine you can clone or download the source code from [extractNetworksFromText](https://github.com/textanalyticsman/extractnetworksfromtext)
+ 10. To install Gephi and ORA-Lite you can use these links [Gephi](https://gephi.org/users/download/) [ORA-Lite](http://www.casos.cs.cmu.edu/projects/ora/download.php ). Importantly, I have used both of them on Windows.
+
+If you follow all these steps, you will manage to run this software in some days I will write a little guide about how to use this to get your first network based on entities that co-occur on the same sentence or paragraph.
+
+Work in progress!
+
+Written with [StackEdit](https://stackedit.io/).
