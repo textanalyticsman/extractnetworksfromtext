@@ -1,10 +1,9 @@
-
-
 #  A software to extract networks based on co-occurrence from unstructured text
+First of all, I am not a developer. Thus, be prepared to find bugs and bad practices that hopefully are going to be fixed over the time.
 
-This is just a desktop application I have done to extract networks from unstructured text written in Spanish. However, as I am using [FreeLing](http://nlp.lsi.upc.edu/freeling/) to implement language analysis capabilities, this tool could also be used to extract networks from unstructured text written on other languages supported by [FreeLing](http://nlp.lsi.upc.edu/freeling/).
+That said, this is just a desktop application I have done to extract networks from unstructured text written in Spanish. However, as I am using [FreeLing](http://nlp.lsi.upc.edu/freeling/) to implement language analysis capabilities, the software presented here can also be used to extract networks from unstructured text written on other languages supported by [FreeLing](http://nlp.lsi.upc.edu/freeling/).
 
-The motivation behind the development of this application was the analysis of criminal networks that are described by unstructured text so I believe this SW could be useful to visualize and to understand a criminal organization. Importantly, this kind of approach based on co-occurrence has been used before. However, I realized that there is a lack of free tools to apply this analysis on languages such as Spanish so I did this software.
+The motivation behind the development of this application is the analysis of criminal networks that are described by unstructured text so I believe this SW could be useful to visualize and to understand a criminal organization. Importantly, this kind of approach based on co-occurrence has been used before. However, I realized that there is a lack of free tools to apply this analysis on languages such as Spanish so I did this software.
 
 Today the relevance of applying Social Network Analysis to understand complex phenomena as criminal organizations is not under discussion. However, the main problem with criminal networks is they do their best to conceal data about their activities and this is why getting tools to gather data about them could be useful. Importantly, mostly criminal organizations are described by unstructured data such as conversations, chats, journalistic articles, etc.
 
@@ -53,7 +52,7 @@ If you want to test this software, follow these steps.
         by 'make' above) is in your LD_LIBRARY_PATH.       
 	 - [ ] Make sure that the package "freeling.jar" created by make is in your 	CLASSPATH
 
-	As this SW is a Maven project I have included the "freeling.jar" as a dependency. What is more the LD_LIBRARY_PATH on NetBeans has been configured with these values -Djava.library.path=/usr/local/lib:/home/osboxes/FreeLing-4.0/APIs/java
+	As this SW is a Maven project I have included the "freeling.jar" as a dependency. What is more, the LD_LIBRARY_PATH on NetBeans has been configured with these values -Djava.library.path=/usr/local/lib:/home/osboxes/FreeLing-4.0/APIs/java
  7. Install MySQL Community Server using this [link](https://dev.mysql.com/downloads/mysql/). I developed this SW with MySQL Server 5.7. Using the latest version is up to you. Once, you have MySQL installed, you can run the script located on [database](https://github.com/textanalyticsman/databasesna)  to create the database used by this software
  8. Install MySQL Workbench using this [link](https://dev.mysql.com/downloads/workbench/) if you want to redesing the database
  9.  Install NetBeans 8.2 on Ubuntu; the internet is plenty of guides to do this. Once you have NetBeans on your machine you can clone or download the source code from [extractNetworksFromText](https://github.com/textanalyticsman/extractnetworksfromtext)
