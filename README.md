@@ -58,7 +58,9 @@ If you want to test this software, follow these steps.
  9.  Install NetBeans 8.2 on Ubuntu; the internet is plenty of guides to do this. Once you have NetBeans on your machine you can clone or download the source code from [extractNetworksFromText](https://github.com/textanalyticsman/extractnetworksfromtext)
  10. To install Gephi and ORA-Lite you can use these links [Gephi](https://gephi.org/users/download/) [ORA-Lite](http://www.casos.cs.cmu.edu/projects/ora/download.php ). Importantly, I have used both of them on Windows.
 
-If you follow all these steps, you will manage to run this software in some days I will write a little guide about how to use this to get your first network based on entities that co-occur on the same sentence or paragraph.
+If you follow all these steps, you will manage to run this software. 
+
+In some days I will write a little guide about how to use this to get your first network based on entities that co-occur on the same sentence or paragraph.
 
 Work in progress!
 
