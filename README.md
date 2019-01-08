@@ -38,9 +38,10 @@ If you want to test this software, follow these steps.
  5. Generate the FreeLing APIs for Java. For example, I have installed FreeLing on this path /home/osboxes/FreeLing-4.0 where you will find the folder APIs. To generate the Java API, follow these steps.
 
 	 - [ ] Edit /FreeLing-4.0/APIs/java/Makefile* to adjust the right values of
-	          FREELINGDIR = /usr/local
-	          SWIGDIR = /usr/share/swig2.0
-	          JAVADIR = /usr/lib/jvm/java-8-openjdk-amd64
+
+		 - [ ] FREELINGDIR = /usr/local
+		 - [ ] SWIGDIR = /usr/share/swig2.0
+		 - [ ] JAVADIR = /usr/lib/jvm/java-8-openjdk-amd64
 	          
 		Previous values are just an example according to my installation
 	 - [ ] Run 'make' to build the java API.
