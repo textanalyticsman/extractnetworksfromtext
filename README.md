@@ -62,8 +62,6 @@ If you want to test this software, follow these steps.
 
 If you follow all these steps, you will manage to run this software. 
 
-In some days I will write a little guide about how to use this to get your first network based on entities that co-occur on the same sentence or paragraph.
-
-Work in progress!
+I am writing a post about how to use this SW so click on [How to use this](https://textanalyticsman.github.io/social_network_analysis/GneratingANetworkFromText/)
 
 Written with [StackEdit](https://stackedit.io/).
